@@ -1,0 +1,12 @@
+menu_options | : 
+ ---------ADMIN DASHBOARD---------
+        Choose an option -
+        1. Add new station
+        2. Add new train
+        3. View existing trains
+        4. Update train details
+        5. Delete train 
+        6. Schedule a train
+        7. View trains for booking
+        8. Logout
+
