@@ -1,0 +1,94 @@
+import yaml
+
+
+class PromptConfig:
+    STARTING_APPLICATION = None
+    USERNAME_PROMPT = None
+    PASSWORD_PROMPT = None
+    SUPERADMIN_ROLE_PROMPT = None
+    WELCOME_SUPERADMIN_PROMPT = None
+    WELCOME_ADMIN_PROMPT = None
+    STATION_NAME_PROMPT = None
+    STATION_ID_PROMPT = None
+    TRAIN_NAME_PROMPT = None
+    TRAIN_NUMBER_PROMPT = None
+    PASSENGER_CAPACITY_PROMPT = None
+    GENERAL_COACH_PROMPT = None
+    AC_COACH_PROMPT = None
+    SLEEPER_COACH_PROMPT = None
+    UPDATE_TRAIN_NAME_PROMPT = None
+    UPDATE_PASSENGER_CAPACITY_PROMPT = None
+    UPDATE_GENERAL_COACH_PROMPT = None
+    UPDATE_AC_COACH_PROMPT = None
+    UPDATE_SLEEPER_COACH_PROMPT = None
+    START_STATION_PROMPT = None
+    END_STATION_PROMPT = None
+    ARRIVAL_TIME_PROMPT = None
+    DEPARTURE_TIME_PROMPT = None
+    QUIT_OPTION = None
+    SEE_FULL_ROUTE = None
+    SCHEDULE_TABLE_FIELDS = None
+    TRAIN_TABLE_FIELDS = None
+    ADMIN_NAME = None
+    SELECT_ADMIN = None
+    ADMIN_NEW_NAME = None
+    ADMIN_NEW_USERNAME = None
+    ADMIN_ID_TO_DELETE = None
+    ADMIN_PROMPT = None
+    AUTH_PROMPT = None
+    SUPERADMIN_PROMPT = None
+    SUPERADMIN_UPDATE_PROMPT = None
+    ADMIN_UPDATE_TRAIN_PROMPT = None
+    ADMIN_SEARCH_TRAIN_PROMPT = None
+    DAY_NUMBER_PROMPT = None
+    TIME_PROMPT = None
+    STATION_LIST_FIELDS = None
+
+    @classmethod
+    def load(cls) -> None:
+        with open("src/config/prompts.yaml") as file:
+            data = yaml.safe_load(file)
+
+            cls.STARTING_APPLICATION = data["STARTING_APPLICATION"]
+            cls.USERNAME_PROMPT = data["USERNAME_PROMPT"]
+            cls.PASSWORD_PROMPT = data["PASSWORD_PROMPT"]
+            cls.SUPERADMIN_ROLE_PROMPT = data["SUPERADMIN_ROLE_PROMPT"]
+            cls.WELCOME_SUPERADMIN_PROMPT = data["WELCOME_SUPERADMIN_PROMPT"]
+            cls.WELCOME_ADMIN_PROMPT = data["WELCOME_ADMIN_PROMPT"]
+            cls.STATION_NAME_PROMPT = data["STATION_NAME_PROMPT"]
+            cls.STATION_ID_PROMPT = data["STATION_ID_PROMPT"]
+            cls.TRAIN_NAME_PROMPT = data["TRAIN_NAME_PROMPT"]
+            cls.TRAIN_NUMBER_PROMPT = data["TRAIN_NUMBER_PROMPT"]
+            cls.PASSENGER_CAPACITY_PROMPT = data["PASSENGER_CAPACITY_PROMPT"]
+            cls.GENERAL_COACH_PROMPT = data["GENERAL_COACH_PROMPT"]
+            cls.AC_COACH_PROMPT = data["AC_COACH_PROMPT"]
+            cls.SLEEPER_COACH_PROMPT = data["SLEEPER_COACH_PROMPT"]
+            cls.UPDATE_TRAIN_NAME_PROMPT = data["UPDATE_TRAIN_NAME_PROMPT"]
+            cls.UPDATE_PASSENGER_CAPACITY_PROMPT = data[
+                "UPDATE_PASSENGER_CAPACITY_PROMPT"
+            ]
+            cls.UPDATE_GENERAL_COACH_PROMPT = data["UPDATE_GENERAL_COACH_PROMPT"]
+            cls.UPDATE_AC_COACH_PROMPT = data["UPDATE_AC_COACH_PROMPT"]
+            cls.UPDATE_SLEEPER_COACH_PROMPT = data["UPDATE_SLEEPER_COACH_PROMPT"]
+            cls.START_STATION_PROMPT = data["START_STATION_PROMPT"]
+            cls.END_STATION_PROMPT = data["END_STATION_PROMPT"]
+            cls.ARRIVAL_TIME_PROMPT = data["ARRIVAL_TIME_PROMPT"]
+            cls.DEPARTURE_TIME_PROMPT = data["DEPARTURE_TIME_PROMPT"]
+            cls.QUIT_OPTION = data["QUIT_OPTION"]
+            cls.SEE_FULL_ROUTE = data["SEE_FULL_ROUTE"]
+            cls.SCHEDULE_TABLE_FIELDS = data["SCHEDULE_TABLE_FIELDS"]
+            cls.TRAIN_TABLE_FIELDS = data["TRAIN_TABLE_FIELDS"]
+            cls.ADMIN_NAME = data["ADMIN_NAME"]
+            cls.SELECT_ADMIN = data["SELECT_ADMIN"]
+            cls.ADMIN_NEW_NAME = data["ADMIN_NEW_NAME"]
+            cls.ADMIN_NEW_USERNAME = data["ADMIN_NEW_USERNAME"]
+            cls.ADMIN_ID_TO_DELETE = data["ADMIN_ID_TO_DELETE"]
+            cls.ADMIN_PROMPT = data["ADMIN_PROMPT"]
+            cls.AUTH_PROMPT = data["AUTH_PROMPT"]
+            cls.SUPERADMIN_PROMPT = data["SUPERADMIN_PROMPT"]
+            cls.SUPERADMIN_UPDATE_PROMPT = data["SUPERADMIN_UPDATE_PROMPT"]
+            cls.ADMIN_UPDATE_TRAIN_PROMPT = data["ADMIN_UPDATE_TRAIN_PROMPT"]
+            cls.ADMIN_SEARCH_TRAIN_PROMPT = data["ADMIN_SEARCH_TRAIN_PROMPT"]
+            cls.DAY_NUMBER_PROMPT = data["DAY_NUMBER_PROMPT"]
+            cls.TIME_PROMPT = data["TIME_PROMPT"]
+            cls.STATION_LIST_FIELDS = data["STATION_LIST_FIELDS"]

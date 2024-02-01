@@ -1,12 +1,79 @@
-menu_options | : 
- ---------ADMIN DASHBOARD---------
-        Choose an option -
-        1. Add new station
-        2. Add new train
-        3. View existing trains
-        4. Update train details
-        5. Delete train 
-        6. Schedule a train
-        7. View trains for booking
-        8. Logout
+---
+AUTH_PROMPT : |
+ Choose an option :-
+  - '1' Login
+  - '2' Exit 
 
+ADMIN_PROMPT : |
+ --------ADMIN DASHBOARD--------
+       Choose an option :-
+       - '1' Add new station
+       - '2' Add new train
+       - '3' View existing trains
+       - '4' Update train details
+       - '5' Delete train 
+       - '6' Schedule a train
+       - '7' View trains for booking
+       - '8' Logout
+
+SUPERADMIN_PROMPT : |
+ ---------SUPERADMIN DASHBOARD---------
+        Choose an option :-
+        - '1' Add new admin
+        - '2' View admin details
+        - '3' Update admin details
+        - '4' Delete admin
+
+SUPERADMIN_UPDATE_PROMPT : |
+  What do you want to update ?
+  - '1' Name
+  - '2' Username
+
+ADMIN_UPDATE_TRAIN_PROMPT : |
+  What do you want to update -> 
+  - '1' Train Name
+  - '2' Train Capacity
+  - '3' General Coaches
+  - '4' AC Coaches
+  - '5' Sleeper Coaches
+
+ADMIN_SEARCH_TRAIN_PROMPT : |
+  Search options ->
+   - '1' Search train by train number
+   - '2' Search by location
+
+STARTING_APPLICATION : ---------- Railway Management System ----------
+USERNAME_PROMPT : Enter username :- 
+PASSWORD_PROMPT : Enter password :-
+SUPERADMIN_ROLE_PROMPT : SUPERADMIN
+WELCOME_SUPERADMIN_PROMPT : Welcome SuperAdmin...
+WELCOME_ADMIN_PROMPT: Welcome Admin...
+STATION_NAME_PROMPT: Enter station name:-  
+STATION_ID_PROMPT: Enter station id:-  
+TRAIN_NAME_PROMPT: Enter train name:- 
+TRAIN_NUMBER_PROMPT: Enter train number:- 
+PASSENGER_CAPACITY_PROMPT: Enter passenger capacity of train:- 
+GENERAL_COACH_PROMPT: Enter number of General coaches:-
+AC_COACH_PROMPT: Enter number of AC coaches:-
+SLEEPER_COACH_PROMPT: Enter number of Sleeper coaches:-
+UPDATE_TRAIN_NAME_PROMPT: Enter new name of the train:- 
+UPDATE_PASSENGER_CAPACITY_PROMPT: Enter new passenger capacity of train:- 
+UPDATE_GENERAL_COACH_PROMPT: Enter new number of General coaches:-
+UPDATE_AC_COACH_PROMPT: Enter new number of AC coaches:-
+UPDATE_SLEEPER_COACH_PROMPT: Enter new number of Sleeper coaches:-
+START_STATION_PROMPT: Enter source:- 
+END_STATION_PROMPT: Enter destination:- 
+ARRIVAL_TIME_PROMPT: Enter arrival time:- 
+DEPARTURE_TIME_PROMPT: Enter departure time:- 
+QUIT_OPTION: Enter q to quit otherwise press any key:- 
+SEE_FULL_ROUTE: Enter train number to see full route map:- 
+SCHEDULE_TABLE_FIELDS: ["Station Name", "Arrival Time", "Departure Time", "Day"]
+TRAIN_TABLE_FIELDS: ["Train Number", "Train Name", "Start Station Time", "Destination Station Time"]
+ADMIN_NAME: Enter name of the admin:- 
+SELECT_ADMIN: Enter Id of admin from the above list:- 
+ADMIN_NEW_NAME: Enter new name of admin:- 
+ADMIN_NEW_USERNAME: Enter new username of admin:- 
+ADMIN_ID_TO_DELETE: Enter Id of the admin to delete:- 
+DAY_NUMBER_PROMPT: Enter day number
+TIME_PROMPT: HH:MM
+STATION_LIST_FIELDS: ["Station ID", "Station Name"]

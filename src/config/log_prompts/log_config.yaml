@@ -1,0 +1,33 @@
+#common
+
+LOG_INVALID_INPUT: Invalid input entered
+LOG_APPLICATION_STARTING: Starting the Railway Management System
+LOG_APPLICATION_EXITING:  Exiting Railway Management System
+
+
+#auth_logs
+LOG_SUPERADMIN_LOGIN: Superadmin logged in the application
+LOG_ADMIN_LOGIN: User logged in the application
+LOG_ADMIN_LOGOUT: Admin logged out from the application
+PROVIDE_ROLE_BASED_ACCESS: Providing role based access to Superadmin
+
+#admin
+LOG_ADMIN_ADDED:   Admin added in the database
+LOG_ADMIN_DELETED: Admin inactivated from the database
+LOG_ADMIN_UPDATE:  Admin details updated in the database
+LOG_ADMIN_READ:    Admin list fetched from the database
+
+#train
+LOG_TRAIN_ADDED:   Train added in the database
+LOG_TRAIN_DELETED: Train inactivated from the database
+LOG_TRAIN_READ:    Train details fetched from the database
+LOG_TRAIN_UPDATED: Train details updated
+
+#station
+LOG_STATION_ADDED:        Station added in the database
+LOG_STATION_LIST_FETCHED: Station details fetched from the database
+
+#Schedule
+LOG_SCHEDULE_ADDED: Schedule of traim added in the database
+LOG_SCHEDULE_ALREADY_EXIST: Schedule already exist of the Train
+

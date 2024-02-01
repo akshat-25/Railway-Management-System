@@ -9,6 +9,8 @@ from controllers.station_controller import StationController
 from controllers.train_controller import TrainController
 from business.train_business import TrainBusiness
 from business.station_business import StationBusiness
+from config.prompts import PromptConfig
+
 
 db = DatabaseAccess()
 admin_business = AdminBusiness(db)
@@ -23,14 +25,15 @@ class AuthView():
         self.controller = controller
         
     def login(self):
-        username = input('Enter your username : ')
-        password = getpass("Password: ")
+        username = input(PromptConfig.USERNAME_PROMPT)
+        password = getpass(PromptConfig.PASSWORD_PROMPT)
         credentials = dict(username = username ,password = password)
         user = self.controller.login(credentials)
-        if user.role == "SUPERADMIN":
-            print('Welcome superadmin...')
+        if user.role == PromptConfig.SUPERADMIN_ROLE_PROMPT:
+            print(PromptConfig.WELCOME_SUPERADMIN_PROMPT)
             superadmin_dashboard = SuperAdminView(admin_controller) 
             superadmin_dashboard.menu()
         else:
+            print(PromptConfig.WELCOME_ADMIN_PROMPT)
             admin_dashboard = AdminView(train_controller,station_controller)
             admin_dashboard.menu()
